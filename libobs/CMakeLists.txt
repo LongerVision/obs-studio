@@ -26,7 +26,7 @@ find_package(ZLIB REQUIRED)
 find_package(Uthash REQUIRED)
 
 if(ENABLE_UI)
-  find_package(Qt6 REQUIRED Core)
+  find_package(Qt6 REQUIRED Core Gui OpenGL)
 endif()
 
 find_package(jansson REQUIRED)
