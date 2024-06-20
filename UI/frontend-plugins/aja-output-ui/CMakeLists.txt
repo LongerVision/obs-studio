@@ -14,7 +14,7 @@ find_package(Qt6 REQUIRED Widgets)
 if(OS_LINUX
    OR OS_FREEBSD
    OR OS_OPENBSD)
-  find_package(Qt6 REQUIRED Gui)
+  find_package(Qt6 REQUIRED Gui Core OpenGL)
 
   find_package(X11 REQUIRED)
 endif()
