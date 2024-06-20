@@ -5,10 +5,10 @@ find_package(Qt6 REQUIRED Widgets Network Svg Xml)
 if(OS_LINUX
    OR OS_FREEBSD
    OR OS_OPENBSD)
-  find_package(Qt6 REQUIRED Gui DBus)
+  find_package(Qt6 REQUIRED Gui Core OpenGL DBus)
 endif()
 
-target_link_libraries(obs-studio PRIVATE Qt::Widgets Qt::Svg Qt::Xml Qt::Network)
+target_link_libraries(obs-studio PRIVATE Qt::Widgets Qt::Svg Qt::Xml Qt::Network Qt::Core Qt::Gui Qt::OpenGL)
 
 set_target_properties(
   obs-studio
